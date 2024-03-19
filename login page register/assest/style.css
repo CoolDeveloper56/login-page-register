@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #ff0000, #870a30);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    margin-top: 5em;
+    transform: translateX(-50%, -50%);
+}
+
+.container .form-login form {
+    background: #fff;
+    width: 370px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px -6px #7474746f;
+    padding: 10px 10px;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.container .form-login form .text-login {
+    padding-left: 30px;
+    margin: 1.5em -10px;
+    font-family: "Duru Sans", sans-serif;
+    border-left: 4px solid #ff0000;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+.container .form-login form .username {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+.container .form-login form .password {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+.container .form-login form .username label {
+    color: black;
+    font-size: 18px;
+    font-family: "Dura Sans", sans-serif;
+    position: absolute;
+    margin-top: -0.5em;
+    transition: 0.3s;
+}
+
+.container .form-login form .icon-input {
+    display: flex;
+}
+
+.container .form-login form .username .icon-input input {
+    width: 100%;
+    height: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2e2e2e;
+    transition: 0.3s;
+}
+
+.container .form-login form .username .icon-input .username-icon {
+    position: absolute;
+    color: #2e2e2e;
+    font-size: 20px;
+    transform: translateX(340px);
+    margin-top: -5px;
+}
+
+.container .form-login form .password label {
+    color: black;
+    font-size: 18px;
+    font-family: "Dura Sans", sans-serif;
+    position: absolute;
+    margin-top: -0.5em;
+    transition: 0.3s;
+}
+
+.container .form-login form .password input {
+    width: 100%;
+    height: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2e2e2e;
+}
+.container .form-login form .password .icon-eyes {
+    display: flex;
+    position: absolute;
+    transform: translate(340px);
+    margin-top: -5px;
+}
+.container .form-login form .password .icon-eyes .eye {
+    color: #2e2e2e;
+    position: absolute;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.container .form-login form .password .icon-eyes .eye-slash {
+    color: #2e2e2e;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container .form-login form .button-submit-adlia {
+    margin: 6em 7em;
+}
+
+.container .form-login form .button-submit-adlia button {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: #2e2e2e7e;
+    cursor: pointer;
+    border: 1px solid #2e2e2e;
+    font-family: "Dura Sans", sans-serif;
+    border-radius: 20px;
+    color: #2e2e2e;
+}
+
+.container .form-register form {
+    background: #ff0000;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    margin: 2em -3em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .form-register form .register-text {
+    padding-left: 30px;
+    margin: 1.5em -10px;
+    margin-top: 6em;
+    font-family: "Duru Sans", sans-serif;
+    border-left: 4px solid #fff;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    visibility: hidden;
+}
+
+.container .form-register form .email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    visibility: hidden;
+}
+
+.container .form-register form .email label {
+    color: black;
+    font-size: 18px;
+    font-family: "Dura Sans", sans-serif;
+    position: absolute;
+    margin-top: -0.5em;
+    transition: 0.3s;
+}
+
+.container .form-register form .icon-input {
+    display: flex;
+}
+.container .form-register form .icon-input .icon-email {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    transform: translateX(370px);
+    margin-top: -5px;
+}
+.container .form-register form .email input {
+    width: 100%;
+    height: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container .form-register form .password {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    visibility: hidden;
+}
+
+.container .form-register form .password label {
+    color: black;
+    font-size: 18px;
+    font-family: "Dura Sans", sans-serif;
+    position: absolute;
+    margin-top: -0.5em;
+    transition: 0.3s;
+}
+
+.container .form-register form .password input {
+    width: 100%;
+    height: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container .form-register form .icon-eyes {
+    display: flex;
+    position: absolute;
+    transform: translateX(370px);
+    margin-top: -5px;
+}
+
+.container .form-register form .icon-eyes .eye {
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.container .form-register form .icon-eyes .eye-slash {
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .form-register form .repeat-password {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    visibility: hidden;
+}
+
+.container .form-register form .repeat-password label {
+    color: black;
+    font-size: 18px;
+    font-family: "Dura Sans", sans-serif;
+    position: absolute;
+    margin-top: -0.5em;
+    transition: 0.3s;
+}
+
+.container .form-register form .repeat-password input {
+    width: 100%;
+    height: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container .form-register form .repeat-password .icon-eyes {
+    display: flex;
+    position: absolute;
+    transform: translateX(370px);
+    margin-top: -5px;
+}
+
+.container .form-register form .repeat-password .icon-eyes .eye {
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.container .form-register form .repeat-password .icon-eyes .eye-slash {
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .form-register form .button-register {
+    margin: 6em 8em;
+}
+
+.container .form-register form .button-register button {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: #2e2e2e7e;
+    cursor: pointer;
+    border: 1px solid #2e2e2e;
+    font-family: "Dura Sans", sans-serif;
+    color: #2e2e2e;
+}
+
+.container .form-register form .exit-icon {
+    position: absolute;
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-left: 1.5em;
+}
+
+.container .form-login form .username label.move {
+    margin-top: -1.2em;
+    transform: scale(0.9);
+}
+.container .form-login form .username input.move {
+    border-bottom-color: #ff0000;
+}
+.container .form-login form .username .username-icon.move {
+    color: #ff0000;
+}
+.container .form-login form .password label.move {
+    margin-top: -1.2em;
+    transform: scale(0.9);
+}
+.container .form-login form .password input.move {
+    border-bottom-color: #ff0000;
+}
+.container .form-login form .password .icon-eyes .eye.move {
+    color: #ff0000;
+}
+.container .form-login form .password .icon-eyes .eye-slash.move {
+    color: #ff0000;
+}
+
+.container .form-login form .password .icon-input .icon-eyes .eye-slash.show {
+    display: none;
+}
+.container .form-login form .password .icon-input .icon-eyes .eye.show {
+    display: block;
+}
+.container .form-register form .email label.move {
+    margin-top: -1.2em;
+    transform: scale(0.9);
+}
+.container .form-register form .email input.move {
+    border-bottom-color: #dbd9d96f;
+}
+.container .form-register form .email .icon-email.move {
+    color: #dbd9d96f;
+}
+.container .form-register form .password label.move {
+    margin-top: -1.2em;
+    transform: scale(0.9);
+}
+.container .form-register form .password input.move {
+    border-bottom-color: #dbd9d96f;
+}
+.container .form-register form .password .icon-eyes .eye.move {
+    color: #dbd9d96f;
+}
+.container .form-register form .password .icon-eyes .eye-slash.move {
+    color: #dbd9d96f;
+}
+.container .form-register form .password .icon-eyes .eye-slash.show {
+    display: none;
+}
+.container .form-register form .password .icon-eyes .eye.show {
+    display: block;
+}
+.container .form-register form .repeat-password label.move {
+    margin-top: -1.2em;
+    transform: scale(0.9);
+}
+.container .form-register form .repeat-password input.move {
+    border-bottom-color: #dbd9d96f;
+}
+.container .form-register form .repeat-password .icon-eyes .eye.move {
+    color: #dbd9d96f;
+}
+.container .form-register form .repeat-password .icon-eyes .eye-slash.move {
+    color: #dbd9d96f;
+}
+.container .form-register form .repeat-password .icon-eyes .eye-slash.show {
+    display: none;
+}
+.container .form-register form .repeat-password .icon-eyes .eye.show {
+    display: block;
+}
+
+.container .form-register form.center {
+    margin-left: -25.3em;
+    margin-top: 5px;
+}
+.container .form-register form.environment {
+    width: 400px;
+    height: 530px;
+    border-radius: 10px;
+    cursor: default;
+}
+.container .form-register form .exit-icon.left {
+    margin-left: 9em;
+}
+.container .form-register form .exit-icon.right-top{
+    margin-top: -20em;
+    margin-left: 16em;
+    transition: 0.8s;
+    transform: rotate(1deg);
+}
+.container  .form-register form .email.visible{
+    visibility: visible;
+}
+.container .form-register form .password.visible{
+    visibility: visible;
+}
+.container .form-register form .repeat-password.visible{
+    visibility: visible;
+}
+.container .form-register form .register-text{
+    visibility: visible;
+}

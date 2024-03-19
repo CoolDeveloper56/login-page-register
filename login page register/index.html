@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login page animate register</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-login">
+            <form action="" method="get">
+                <div class="text-login">
+                    <h3>Login</h3>
+                </div>
+                <div class="username">
+                    <label for="username" id="user_label">Username</label>
+                    <div class="icon-input">
+                        <input type="text" name="username" id="username">
+                        <div class="username-icon" id="user-icon"><i class="fa fa-user"></i></div>
+                    </div>
+                </div>
+                <div class="password">
+                    <label for="password" id="pass_label">Password</label>
+                    <div class="icon-input">
+                        <input type="password" name="password" id="password">
+                        <div class="icon-eyes">
+                            <div class="eye" id="eye"><i class="fa fa-eye"></i></div>
+                            <div class="eye-slash" id="eye_slash"><i class="fa fa-eye-slash"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-submit-adlia">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-register">
+            <form action="" method="get" id="form_register">
+                <div class="exit-icon" id="exit_icon"><i class="fa fa-times"></i></div>
+                <div class="register-text" id="text_register">
+                    <h3>Register</h3>
+                </div>
+                <div class="email" id="email_box">
+                    <label for="email" id="email_label">Email</label>
+                    <div class="icon-input">
+                        <input type="email" name="email" id="email">
+                        <div class="icon-email" id="email-icon"><i class="fa fa-envelope"></i></div>
+                    </div>
+                </div>
+                <div class="password" id="password_box">
+                    <label for="password" id="pass_register_label">Password</label>
+                    <div class="icon-input">
+                        <input type="password" name="password" id="password_register">
+                            <div class="icon-eyes">
+                            <div class="eye" id="eye_register"><i class="fa fa-eye"></i></div>
+                            <div class="eye-slash" id="eye_slash_register"><i class="fa fa-eye-slash"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repeat-password" id="password_repeat_box">
+                    <label for="password" id="pass_register_repeat_label">Repeat Password</label>
+                    <div class="icon-input"> 
+                        <input type="password" name="password_repeat" id="demo">
+                        <div class="icon-eyes">
+                            <div class="eye" id="eye_register_repeat"><i class="fa fa-eye"></i></div>
+                            <div class="eye-slash" id="eye_slash_register_repeat"><i class="fa fa-eye-slash"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-register" id="btn_register">
+                    <button type="submit">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assest/app.js"></script>
+</body>
+
+</html>
